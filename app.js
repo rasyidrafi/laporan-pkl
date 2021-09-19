@@ -21,9 +21,7 @@ routerArray.forEach(({ name, path }) => {
 });
 
 // error handler
-app.use((req, res) => res.status(404).render("pages/error",
-    { errorMsg: "Created by Rasyid Rafi", dir: __dirname, statusCode: 404 })
-);
+app.use((req, res) => res.redirect("/"));
 
 const { NODE_ENV } = process.env;
 const PORT = process.env.PORT || 2224;
