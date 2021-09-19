@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head -->
+  <%- include('../layout/_head') -%>
+
+  <body class="nk-body bg-purple npc-default">
+    <div class="nk-app-root">
+      <!-- main @s -->
+      <div class="nk-main">
+        <!-- wrap @s -->
+        <div class="nk-wrap nk-wrap-nosidebar">
+          <!-- content @s -->
+          <div class="nk-content">
+            <div class="nk-block nk-block-middle container">
+              <div class="card my-2">
+                <div class="card-header text-center">
+                  <h5>Masukkan data di bawah dengan benar</h5>
+                </div>
+                <div class="card-inner">
+                  <form id="step-one-form" action="/" method="POST">
+                    <div class="row g-4">
+                      <div class="col-lg-6 col-7">
+                        <div class="form-group">
+                          <label class="form-label" for="nama_industri"
+                            >Nama Industri</label
+                          >
+                          <div class="form-control-wrap">
+                            <input
+                              type="text"
+                              name="nama_industri"
+                              required
+                              placeholder="R45 Foundation"
+                              class="form-control"
+                              id="nama_industri"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-5">
+                        <div class="form-group">
+                          <label class="form-label" for="Jurusan"
+                            >Jurusan</label
+                          >
+                          <div class="form-control-wrap">
+                            <input
+                            required
+                            placeholder="12 RPL 2"
+                            name="jurusan_anda"
+                              type="text"
+                              class="form-control"
+                              id="Jurusan"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-7">
+                        <div class="form-group">
+                          <label class="form-label" for="kapro_jurusan_dan_gelar"
+                            >Nama Kepala Program & Gelar</label
+                          >
+                          <div class="form-control-wrap">
+                            <input
+                            required
+                              type="text"
+                              placeholder="H. Muhammad Rasyid Rafi'i, S.Kom, M"
+                              class="form-control"
+                              name="kapro_jurusan_dan_gelar"
+                              id="kapro_jurusan_dan_gelar"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-5">
+                        <div class="form-group">
+                          <label class="form-label" for="nip_kapro_jurusan"
+                            >NIP Kepala Program</label
+                          >
+                          <div class="form-control-wrap">
+                            <input
+                              type="text"
+                              required
+                              placeholder="NIP. 22252225 222525 2 525"
+                              name="nip_kapro_jurusan"
+                              class="form-control"
+                              id="nip_kapro_jurusan"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-7">
+                        <div class="form-group">
+                          <label for="guru_pembimbing_dan_gelar" class="form-label">Guru Pembimbing Sekolah & Gelar</label>
+                          <div class="form-control-wrap">
+                            <input
+                              type="text"
+                              required
+                              placeholder="Ahmad Aditya Saputra, S.Pd"
+                              name="guru_pembimbing_dan_gelar"
+                              class="form-control"
+                              id="guru_pembimbing_dan_gelar"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-5">
+                        <div class="form-group">
+                          <label class="form-label" for="nip_pembimbing"
+                            >NIP Guru Pembimbing</label
+                          >
+                          <div class="form-control-wrap">
+                            <input
+                              type="text"
+                              required
+                              placeholder="NIP. 22252225 222525 2 525"
+                              name="nip_pembimbing"
+                              class="form-control"
+                              id="nip_pembimbing"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!---->
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label for="kepala_sekolah_dan_gelar" class="form-label">Kepala Sekolah & Gelar</label>
+                          <div class="form-control-wrap">
+                            <input
+                              type="text"
+                              required
+                              placeholder="H. Unknown, S.Pd"
+                              name="kepala_sekolah_dan_gelar"
+                              class="form-control"
+                              id="kepala_sekolah_dan_gelar"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label class="form-label" for="nip_kepala_sekolah"
+                            >NIP Kepala Sekolah</label
+                          >
+                          <div class="form-control-wrap">
+                            <input
+                              type="text"
+                              required
+                              placeholder="NIP. 22252225 222525 2 525"
+                              name="nip_kepala_sekolah"
+                              class="form-control"
+                              id="nip_kepala_sekolah"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label class="form-label" for="tanggal_laporan_dibuat"
+                            >Tanggal Laporan Dibuat</label
+                          >
+                          <div class="form-control-wrap">
+                            <input type="date" id="tanggal_laporan_dibuat" name="tanggal_laporan_dibuat" class="form-control"
+                            required>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label class="form-label" for="pembimbing_industri"
+                            >Guru Pembimbing Industri</label
+                          >
+                          <div class="form-control-wrap">
+                            <input
+                              type="text"
+                              name="pembimbing_industri"
+                              required
+                              class="form-control"
+                              id="pembimbing_industri"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="form-group">
+                          <label class="form-label" for="direktur_kepala_industri"
+                            >Nama Kepala Industri</label
+                          >
+                          <div class="form-control-wrap">
+                            <input
+                            required
+                              type="text"
+                              class="form-control"
+                              name="direktur_kepala_industri"
+                              id="direktur_kepala_industri"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label class="form-label" for="list-init"
+                            >List Siswa & Jurusan</label
+                          >
+                          <div class="form-control-wrap">
+                            <textarea class="form-control" required name="list_siswa" placeholder="Muhammad Rasyid Rafi'i - XII Rpl 2
+Muhammad Firza Ali Fikri - XII BC
+Wildan Arindra Ramadhan - XII MT 3" id="list-init"></textarea>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label for="penyusun" class="form-label">Tim Penyusun Laporan</label>
+                          <div class="form-control-wrap" id="select2-container">
+                            <select name="penyusun" id="penyusun" class="form-select" multiple required>
+                                <option value="ok">Oke</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 d-flex justify-content-center">
+                        <div class="form-group">
+                          <button type="submit" class="btn btn-lg btn-primary">
+                            Lanjut Boss
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- wrap @e -->
+        </div>
+        <!-- content @e -->
+      </div>
+      <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <!-- JavaScript -->
+    <%- include('../layout/_script') -%>
+    <script src="/js/root.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "express_dashlite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node .",
+    "dev": "cross-env NODE_ENV=development nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "docxtemplater": "^3.25.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "pizzip": "^3.1.1"
+  }
+}
